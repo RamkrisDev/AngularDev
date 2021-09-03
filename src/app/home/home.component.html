@@ -1,0 +1,31 @@
+<div class="grid-container" >
+  <h1 class="mat-h1">Developer's Dashboard</h1>
+  <mat-grid-list cols="2" rowHeight="350px" *ngFor="let u of Total$">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          
+          <mat-card-title>
+            <h1>{{u.firstname}}</h1>
+            
+          </mat-card-title>
+        </mat-card-header>
+       <div class="grid-container"  style="display: flex;">
+
+            <div class="a">
+              <img src="..\assets\images\logo.jpg" alt="" srcset="">
+            </div>
+        <div class="b">
+            <h3>Role      :{{u.role}}</h3>
+            <h3>First Name: {{u.firstname}}</h3>
+            <h3>Last Name :{{u.lastname}}</h3>
+              <h3>Email     : {{u.email}}</h3>
+                <h3>Address   : {{u.address}}</h3>
+          </div>  
+        </div>  
+          
+         
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,49 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  display: block;
+  float: right;
+}
+
+.a{
+  width: 20%;
+  height: 200px;                                      
+  background-color: aqua;
+  
+}
+.a img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.b{
+  float:right ;
+  margin-left: 10%;
+}
+
+.mat-h1{
+  color: aliceblue;
+}
+
+.mat-card-title{
+  text-transform: capitalize;
+}

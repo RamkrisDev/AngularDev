@@ -1,0 +1,21 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    text-transform: capitalize;
+    
+}
+table tr{
+    border-top: 1px solid aqua;
+}
+tr:nth-child(odd){
+    background-color: aquamarine;
+}
+td:nth-child(odd){
+    font-size: larger;
+}
+h1{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,37 @@
+<h1>
+  Developer Login 
+</h1>
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form"  #signIn="ngForm" (ngSubmit)="signIn.valid && onSubmit(signIn)">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+              <input matInput name="email" id="" required #email="ngModel" [pattern]="regexp" [(ngModel)]="model.email" placeholder="Email" [ngClass]="{'invalid-text':signIn.submitted && !email.valid }">
+              </mat-form-field>
+              <div *ngIf='signIn.submitted && email.invalid'>
+                <label for="">required</label>
+            </div>
+            </td>
+          </tr>
+          <tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput type="password" name="password" placeholder="password" #pass="ngModel" [(ngModel)]="model.password" required id="">
+          </mat-form-field></td>
+        </tr></table>
+     
+     
+    
+    <mat-card-actions>
+      <button mat-raised-button color="primary">Login</button>
+    </mat-card-actions>
+  
+  <h1 *ngIf='errmsg'>{{errmsg}}</h1>
+</form>
+</mat-card-content>
+</mat-card>
